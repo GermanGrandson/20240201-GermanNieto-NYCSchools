@@ -1,0 +1,30 @@
+.search-results-container {
+  width: 100%;
+  box-shadow: 0 0 8px #ddd;
+  border-radius: 10px;
+  margin-top: 1rem;
+  max-height: 590px;
+  overflow-y: scroll;
+  background-color: #b3e9fff2;
+}     
+
+.search-result{
+  text-align: center;
+  border: solid black 1px;
+  border-radius: 10px;
+  margin-bottom: 25px;
+  cursor: pointer;
+  background-color: royalblue;
+  color: white;
+  width: 100%;
+}
+
+.search-result:hover{
+  background-color: #b0e3ffb1;
+  color: black;
+}
+
+.search-result:focus{
+  background-color: #b0e3ffb1;
+  color: black;
+}

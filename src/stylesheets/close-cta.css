@@ -1,0 +1,26 @@
+.close-cta {
+  margin: 20px 0;
+  height: 40px;
+  width: 100px;
+  border-radius: 10px;
+  background-color: royalblue;
+  border: none;
+  font-size: 18px;
+  cursor: pointer;
+  color: white;
+}
+
+.close-cta:hover {
+  background-color: #b0e3ffb1;
+  color: black;
+}
+
+.close-cta:focus {
+  background-color: #b0e3ffb1;
+  color: black;
+}
+
+.cta-copy {
+  vertical-align: top;
+  margin-left: 10px;
+}

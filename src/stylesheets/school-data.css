@@ -1,0 +1,65 @@
+
+.school-data {
+  height: 450px;
+  float: left;
+  width: 49%;
+  line-height: 32px;
+  background-color: royalblue;
+  color: white;
+  border-radius: 10px;
+  position: relative;
+}
+
+.school-name {
+  text-align: center;
+  font-size: 24px;
+  margin: 20px 0;
+}
+
+.school-info {
+  margin: 0 60px;
+  font-size: 20px;
+}
+
+.info-name {
+  width: 40px;
+  display: inline-block;
+  font-size: 20px;
+  vertical-align: text-top;
+}
+
+a {
+  color: white;
+}
+
+.school-sat-info {
+  margin: 20px 0;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+}
+
+.sat-score-header {
+  text-align: center;
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+
+.sat-score {
+  display: inline-block;
+  width: 33%;
+  font-size: 50px;
+  text-align: center;
+}
+
+.sat-title {
+  margin-top: 10px;
+  font-size: 16px;
+}
+
+.school-map {
+  height: 450px;
+  float: right;
+  width: 49%;
+  border-radius: 10px;
+}
