@@ -4,6 +4,7 @@ import {APIProvider, Map, Marker} from '@vis.gl/react-google-maps';
 import {FaCity, FaPhone, FaGlobe, FaEnvelope, FaSchool, FaGraduationCap} from "react-icons/fa"
 import { SelectedSchool } from "../App"
 
+const MAPS_API_KEY = import.meta.env.VITE_MAP_API_KEY
 
 type SchoolDataProps = {
   school: {
@@ -26,8 +27,6 @@ type SchoolDataProps = {
   }[],
   setSelectedSchool: React.Dispatch<React.SetStateAction<SelectedSchool>>,
 }
-
-const MAPS_API_KEY = "AIzaSyBzjknxRTGLgy55fdESik3TD_EV8iA8eFQ"
 
 const SchoolData = ({school, setSelectedSchool, satScores}: SchoolDataProps) => {
   const handleOnClose = () => {
@@ -120,7 +119,6 @@ const SchoolData = ({school, setSelectedSchool, satScores}: SchoolDataProps) => 
       </div>
     )
   }
-
 
   return(
     <>
