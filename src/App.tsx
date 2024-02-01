@@ -1,7 +1,6 @@
 import { useState, useEffect } from 'react'
 import Search from "./components/Search"
 import SchoolData from "./components/SchoolData"
-// import viteLogo from '/vite.svg'
 import './stylesheets/App.css'
 import { Puff } from 'react-loader-spinner'
 
@@ -42,22 +41,26 @@ function App() {
   }, [selectedSchool])
 
   async function getSchoolData() {
+    // fetching school data
     const request = await fetch(SCHOOL_API)
     const data = await request.json()
     setSchoolData(data)
   }
 
   async function getSATData() {
+    // fetching SAT data for school once one has been selected
     const request = await fetch(`${SCHOOL_SAT_API}?dbn=${selectedSchool.dbn}`)
     const data = await request.json()
     setSchoolSATScore(data)
   }
 
   const schoolSelected = () => (
+    // return true only if selectedSchool object is not empty
     !!Object.keys(selectedSchool).length
   )
 
   const renderSpinner = () => {
+    // render loading spinner if there is no school data yet
     if (!Object.keys(schoolData).length) {
       return <Puff ariaLabel="puff-loading" color="royalblue" wrapperClass="spinner"/>
     }

@@ -72,7 +72,7 @@ const SchoolData = ({school, setSelectedSchool, satScores}: SchoolDataProps) => 
             <span className="info-name">
               <FaGlobe />
             </span>
-            <a href={school?.website} target="_blank">{school?.website}</a>
+            <a aria-label="click to go to school website" href={school?.website} target="_blank">{school?.website}</a>
           </div>
           <div>
             <span className="info-name">

@@ -20,7 +20,8 @@ const Search = ({setSelectedSchool, schoolData}: SearchProps) => {
     const filteredSchools = schoolData.filter(school => (
       school.school_name.toLowerCase().includes(input.toLowerCase())
     ))
-
+    
+    // return schools in alphabetical order
     return filteredSchools.sort((x,y) => (x.school_name > y.school_name) ? 1 : -1)
   }
 
@@ -28,7 +29,7 @@ const Search = ({setSelectedSchool, schoolData}: SearchProps) => {
     <div className="search-bar">
       <div className="input-wrapper">
         <FaSearch id="search-icon" />
-        <input placeholder="search by school name" value={input} onChange={(e) => handleChange(e.target.value)}/>
+        <input aria-label="input" placeholder="search by school name" value={input} onChange={(e) => handleChange(e.target.value)}/>
       </div>
       <SearchResults filteredResults={filterResults()} setSelectedSchool={setSelectedSchool} />
     </div>

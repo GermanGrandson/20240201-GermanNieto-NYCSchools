@@ -11,10 +11,10 @@ const SearchResults = ({setSelectedSchool, filteredResults}: SearchResultsProps)
   }
 
   return(
-    <div role="button" className="search-results-container">
+    <div className="search-results-container">
       {filteredResults.map((school, index) => (
-        <button key={index} className="search-result" onClick={() => handleSelectSchool(school)}>
-          <h2>{school.school_name}</h2>
+        <button aria-label={school.school_name} key={index} className="search-result" onClick={() => handleSelectSchool(school)}>
+          <h2 aria-label={school.school_name}>{school.school_name}</h2>
         </button>
       ))}
     </div>
